@@ -32,6 +32,7 @@ export class HomeComponent {
 
   onSubmit(): void {
     this.loading = true
+    this.errorState = '';
     if(this.searchForm.valid) {
       this.githubSearch.search(<string>this.searchForm.value.search)
       .subscribe((result: GithubUser) => {
