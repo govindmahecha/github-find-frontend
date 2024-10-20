@@ -1,0 +1,11 @@
+<div [ngClass]="{'with-border': withBorder}" class="card-container" *ngIf="user !== null">
+    <div class="container1">
+        <p>User Image</p>
+        <img [src]="user.avatar_url" />
+    </div>
+    
+    <div>
+        <p>GitHub User Name</p>
+        <p class="user-name">{{user.name}}</p>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+.container {
+    padding: 64px 30% 32px 30% ;
+
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 64px 20% 32px 20% ;
+    }
+  }
+
+@media (max-width: 600px) {
+.container {
+    padding: 64px 15% 32px 15% ;
+}
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;;
+    color: #5d5c5c
+}
+
+table {
+    width: 100%;
+    border: 1px solid #f2efef;
+}
+
+th {
+    background-color: white;
+}
+
+.table-header {
+    background-color: #f2f2f2;
+    font-size: 13px;
+    font-weight: 600;
+    color: #949494
+}
+  
+
+
+button {
+    margin-top: 32px;
+    background-color: #38b896;
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    height: 34px;
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #2aa081;
+}
+
+.clear-cta {
+    text-align: center;
+}
+
+.keyword-header {
+    color: #9093a8;
+    font-size: 12px;
+    font-weight: 600;
+}

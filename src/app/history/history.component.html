@@ -1,0 +1,28 @@
+<div class="container" >
+    <p class="title">Your Search History</p>
+
+    
+    <table >
+        <thead>
+            <th class="table-header">Search Term</th>
+            <th class="table-header">Search Result</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let history of (gitHistory$ | async)">
+            
+                <th class="keyword-header">{{history?.keyword}}</th>
+                <th *ngIf="isNotError(history); else errorState"><app-user-card [user]="history"></app-user-card></th>
+            
+                <ng-template #errorState>
+                    <th><p class="keyword-header">{{history?.error}}</p></th>
+                </ng-template>
+            </tr>
+            
+
+            
+        </tbody>
+    </table>
+    <div class="clear-cta">
+        <button (click)="onClear()">Clear Search History</button>
+    </div>
+</div>

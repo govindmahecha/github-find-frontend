@@ -1,0 +1,28 @@
+.card-container {
+    display: flex;
+    padding:32px;
+    gap: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #bfc1d0;
+    
+    background-color:white;
+}
+
+.with-border {
+    border: 2px solid #f2f2f6;
+    border-radius: 4px;
+}
+
+.container1 {
+    flex-grow:1;
+
+}
+
+.card-container img {
+    width: 80px;
+}
+
+.user-name {
+    color: #9093a8
+}

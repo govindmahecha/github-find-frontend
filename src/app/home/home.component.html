@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="search-container">
+        <p>Search Github User</p>
+        <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+            <input type="text" formControlName="search" />
+            <button type="submit" [disabled]="loading">{{loading ? 'loading...' : 'Search'}}</button>
+        </form>
+
+        <div class="result-container" *ngIf="result !== null">
+            <p>Search Results</p>
+            
+            <app-user-card [user]="result" [withBorder]="true" *ngIf="!errorState; else emptyState"></app-user-card>
+            <ng-template #emptyState>
+                <p>Search result not found</p>
+            </ng-template>
+        </div>
+
+        
+
+    </div>
+
+</div>

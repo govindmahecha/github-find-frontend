@@ -1,0 +1,25 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    background: white;
+    padding: 8px 8px 0px 8px;
+}
+
+.header-links {
+    margin-right: 64px;
+    font-family: sans-serif;
+}
+
+.header-links > a {
+    height:100%;
+    text-decoration: none;
+    color: darkslategray;
+    padding: 8px;
+    line-height: 2.3;
+}
+
+.active {
+    border-bottom: 3px solid rgb(94, 126, 222)
+}
